@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "domus-pcmi6-synthetic-v1",
+  "asset": "pcmi6-lidar-ground-v1.png",
+  "generatedAt": "2026-08-31",
+  "status": "synthetic-preparatory-not-photographic",
+  "purpose": "Aide à la conception et au cadrage de l'insertion PCMI6 depuis le point PCMI7 candidat",
+  "controlInputs": [
+    "Blender ground-level color control",
+    "Semantic segmentation pass",
+    "Surface normal pass",
+    "Depth pass",
+    "IGN LiDAR-derived terrain and sursol context"
+  ],
+  "camera": {
+    "mode": "pcmi7",
+    "source": "Access candidate derived from the project dossier and to be verified on site",
+    "capturePointWgs84": {
+      "longitude": 0.33649317,
+      "latitude": 46.63610494
+    },
+    "eyeHeightM": 1.65,
+    "focalLengthMm": 35,
+    "resolutionPx": [1600, 1000]
+  },
+  "geometry": {
+    "footprintM": [12, 8],
+    "rotationDegrees": 12,
+    "preservedFromControlRender": true
+  },
+  "generationMethod": "OpenAI built-in image generation, sketch-to-render",
+  "limitations": [
+    "The access point is a calculated candidate and not a surveyed camera position.",
+    "The vegetation and photographic appearance are reconstructed.",
+    "This asset is not a photograph of the site.",
+    "It cannot replace PCMI7 or PCMI8 photographs.",
+    "A real photograph and professional geometric and photometric calibration remain required before filing."
+  ]
+}

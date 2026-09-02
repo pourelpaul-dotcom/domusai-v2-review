@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "domus-pcmi6-synthetic-v1",
+  "asset": "pcmi6-lidar-photoreal-v1.png",
+  "generatedAt": "2026-08-31",
+  "status": "synthetic-preparatory-not-photographic",
+  "purpose": "Aide à la conception et au cadrage de l'insertion PCMI6",
+  "controlInputs": [
+    "Blender terrain and building projection",
+    "Semantic segmentation pass",
+    "Surface normal pass",
+    "IGN LiDAR-derived terrain and sursol context"
+  ],
+  "geometry": {
+    "footprintM": [12, 8],
+    "rotationDegrees": 12,
+    "preservedFromControlRender": true
+  },
+  "generationMethod": "OpenAI built-in image generation, sketch-to-render",
+  "limitations": [
+    "The vegetation and photographic appearance are reconstructed.",
+    "This asset is not a photograph of the site.",
+    "It cannot replace PCMI7 or PCMI8 photographs.",
+    "A real photograph and professional geometric and photometric calibration remain required before filing."
+  ]
+}
