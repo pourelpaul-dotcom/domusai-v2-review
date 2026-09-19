@@ -1,0 +1,157 @@
+# Domus - dossier de revue indépendante
+
+État documenté au 19 septembre 2026. Présentation du projet et du prototype, pas certification technique, financière ou réglementaire.
+
+## Du souhait d’habiter
+au projet réalisable
+
+Domus est un projet de plateforme d’habitat assistée par IA. Son ambition : rendre la construction plus accessible en reliant conception, coût, financement et exécution.
+
+« Domus transforme une intention d’habiter en projet structuré, financièrement lisible, techniquement plausible et directement consultable par les professionnels. »
+
+### Le problème à résoudre
+
+Un particulier doit aujourd’hui coordonner terrain, plans, équipements, banque, aides, permis et intervenants. Les données se répètent, les coûts se révèlent tard et les arbitrages sont difficiles. Domus veut réduire ces frictions, les omissions et les dépenses évitables. La baisse effective du coût final reste à démontrer sur des projets comparables ; aucune économie générale n’est acquise.
+
+### Pour qui, et avec quelle différence ?
+
+Le cœur de cible est le particulier qui construit une maison. Le projet prévoit aussi l’habitat évolutif et senior ; les parcours collectifs et investisseurs sont des extensions à qualifier. Les professionnels reçoivent un dossier plus exploitable ; banques et organismes disposent d’informations structurées. Contrairement à un simple configurateur, Domus vise la cohérence du projet entier. L’atelier détaillé doit ensuite rendre la personnalisation ludique, pièce par pièce, dans l’esprit d’usage des Sims et de HomeByMe.
+
+### Le parcours cible de bout en bout
+
+1. Décrire foyer, usages, localisation, calendrier et budget.
+2. Étudier le terrain ou travailler sur une hypothèse explicite de terrain plat.
+3. Composer le programme, comparer des distributions et visualiser en 2D/3D.
+4. Personnaliser pièces et équipements avec leurs conséquences financières.
+5. Structurer financement, aides potentielles et coût de vie sur 20 ans.
+6. Constituer le Passeport Projet, consulter les professionnels et comparer les devis.
+7. Préparer les pièces du permis puis suivre décisions, preuves et étapes du chantier.
+
+### La philosophie produit
+
+Une seule version de référence du projet, des données réutilisées plutôt que ressaisies, des explications accessibles et une prochaine action claire. L’utilisateur doit pouvoir comprendre ce qui change, revenir en arrière et savoir ce qui nécessite un professionnel. L’IA organise et propose ; elle ne vaut ni validation structurelle, ni permis accordé, ni accord bancaire.
+
+Lecture du dossier : les fonctions décrites sont des objectifs ou des composants de prototype, sauf preuve expressément indiquée. Le chantier « Licorne » désigne l’ambition de refonte et de croissance, pas un niveau de maturité commerciale ou une valorisation démontrés.
+
+## Un moteur général,
+un atelier compréhensible
+
+Le bon plan ne se résume pas à remplir une enveloppe : il doit être utilisable, adaptable, chiffrable et soumis à des contrôles explicites.
+
+### Générer à partir de besoins et de contraintes
+
+Le moteur doit distinguer les contraintes bloquantes des préférences pondérées : surface, pièces, relations jour/nuit, intimité, lumière, orientation, bruit, accès, terrain, pente et systèmes constructifs. Les formes I, L, U, O/patio et leurs combinaisons sont des bases adaptables, non des silhouettes imposées. Décrochés, pans coupés, étages décalés ou terrasses doivent apporter un bénéfice d’usage ou de design sans complexité constructive injustifiée.
+
+### Contrôler la maison comme un ensemble
+
+Intégrer épaisseur et emprise des murs, surfaces réellement utilisables, mobilier, ouvertures et débattements. Vérifier l’accès à chaque pièce, les collisions, les dégagements PMR lorsque requis, et la séparation des usages. Une salle d’eau peut desservir plusieurs chambres ; deux salles d’eau mitoyennes sont pertinentes si elles appartiennent à deux suites distinctes. Prévoir rangement, lingerie adaptée au foyer, locaux techniques, réseaux et garage attenant si demandé.
+
+### Traiter les niveaux et escaliers sans raccourci
+
+Escaliers droits, tournants, hélicoïdaux et configurations particulières doivent être évalués selon l’usage et l’emprise. Sens de montée, départs, arrivées, paliers et circulation doivent rester cohérents entre tous les étages. La trémie peut être plus petite que l’emprise de l’escalier, sous réserve de hauteur libre suffisante. Hauteurs de plafond et demi-niveaux sont des variables ; structure et sécurité nécessitent une validation professionnelle.
+
+### Personnaliser avec deux règles de budget
+
+Budget ajustable : afficher le supplément ou l’économie avant application, puis le nouveau total.
+Enveloppe à respecter : proposer des variantes compatibles ou une compensation explicite ; ne jamais relever silencieusement le plafond. Un coût inconnu n’est pas nul et une aide espérée ne crée pas de marge certaine.
+Interaction cible : sélectionner l’espace, puis porte, fenêtre, équipement ou destination ; prévisualiser, appliquer, annuler et retrouver l’historique. Les mêmes garde-fous techniques s’appliquent dans les deux modes.
+
+### État observé et réemploi raisonnable
+
+Un moteur, des contrôles, des comparateurs et une projection 3D existent dans le code. Le bilan du 16 septembre signale des réussites partielles sur 95/123 m² mais aucun assemblage complet pour le témoin 150 m². Cela interdit de présenter la génération comme résolue. L’atelier récent démontre localement un choix d’équipement fictif et son arbitrage budgétaire, pas encore une édition complète reliée au plan réel.
+
+HomeByMe : essais de pièce, dimensions, hauteur, mobilier, sauvegarde/reprise et plan 2D ; rendu FHD demandé mais résultat final non vérifié. Retenir les principes ergonomiques, sans copier code privé ni ressources propriétaires. Le réemploi open source nécessite encore une sélection, un audit de licence et un test d’intégration.
+
+## Rendre chaque euro explicable
+
+La promesse commerciale doit reposer sur une chaîne traçable : choix du projet → équipement → devis → règle d’aide → coût et financement.
+
+### Montrer le coût complet, puis le coût mensuel
+
+Séparer terrain, construction, équipements, études, raccordements, frais, taxes et réserve pour imprévus, en précisant les inclusions et les inconnues. Afficher distinctement mensualité du crédit, assurance emprunteur et énergie, puis leur total si utile. Le coût énergétique mensuel est une moyenne prévisionnelle, pas une facture constante. Imports d’offres bancaires et valeurs extraites doivent être relus, datés et reliés à leur document source.
+
+### Comparer les équipements sur la durée
+
+Options à étudier : isolation et conception passive, protections solaires, ventilation, PAC, solaire photovoltaïque ou thermique, tuiles solaires, batteries, pilotage intelligent, recharge automobile, récupération d’eau et rafraîchissement sobre. Comparer le prix installé, la consommation, l’entretien, les remplacements, la compatibilité et les usages ; ne pas supposer chaque technologie rentable ou subventionnée.
+Coût à 20 ans : investissement + exploitation + entretien/remplacements - aides retenues - recettes éventuelles. Afficher hypothèses, scénarios et périmètre ; éviter de compter deux fois investissement et remboursement du capital.
+
+Exemple pédagogique, non étude thermique : pour un besoin annuel de chauffage de 9 000 kWh de chaleur, une performance saisonnière de 3 correspond à environ 3 000 kWh d’électricité pour ce chauffage. Le gain ne s’applique pas à toute la facture ; climat, logement, équipement et usage changent le résultat.
+
+### Les aides : ni uniquement avant, ni seulement après
+
+En amont : filtrer les dispositifs plausibles selon projet neuf/rénovation, territoire, foyer, calendrier et performances, sans choisir un équipement inutile uniquement parce qu’il est aidé.
+Lors des variantes : comparer coût brut, aides potentielles et coût net estimé avec incertitudes.
+Sur devis : calculer la base réellement éligible, le taux ou forfait, les plafonds, cumuls, dates et pièces requises. Une formule possible est min(base admissible × taux, plafond), mais chaque dispositif impose ses propres règles.
+Après instruction : distinguer montant estimé, accordé et versé ; suivre documents, échéances et conditions de paiement.
+
+### Une formulation commerciale honnête
+
+Exemple fictif : « Projet estimé à 340 000 €, dont jusqu’à 12 000 € d’aides potentielles à vérifier », avec détail des hypothèses et éléments manquants. Le mot « finançable » doit être clarifié : un prêt n’est pas une subvention et ne réduit pas le prix. Le budget prudent ne déduit pas une aide non sécurisée comme un acquis. Le montant de 12 000 € n’est ici ni un droit identifié ni une simulation réelle.
+
+À fiabiliser : référentiel officiel daté, mises à jour et alertes de péremption, éventuelles API, provenance des prix, documents nécessaires et piste d’audit. Des composants existent ; la chaîne complète avec devis réels, barèmes actualisés et accès externes reste à valider. Ce dossier ne certifie aucun dispositif d’aide en vigueur.
+
+## Du dossier à la réalisation
+
+Domus doit devenir l’outil qui relie les décisions, plutôt qu’une accumulation de simulateurs et de tableaux sans action.
+
+### Le Passeport Projet Domus
+
+Dossier versionné : programme, terrain, plans, budget, équipements, hypothèses, sources, décisions, points bloquants et justificatifs. Une modification doit invalider ou recalculer les éléments dépendants. Partages adaptés aux professionnels et institutions, droits limités, révocation et journal des accès sont prévus dans le socle. Leur fonctionnement réel, la sauvegarde, les conflits de versions et la confidentialité financière restent à éprouver de bout en bout.
+
+### Une marketplace utile, pas un simple annuaire
+
+Mettre en relation selon territoire, compétence, disponibilité et adéquation au projet. Envoyer un dossier structuré ; recevoir des devis comparables à périmètre égal ; clarifier inclusions, exclusions, quantité, référence produit, fourniture, pose, taxes, durée de validité et pièces pour les aides. Une offre reçue ne devient pas automatiquement un choix budgétaire. Distinguer proposition, sélection et engagement ; expliquer tout placement sponsorisé. Les prix d’équipement doivent venir de sources ou devis identifiables, pas de montants fictifs présentés comme fermes.
+
+### Permis, construction et automatisation
+
+La sortie cible « Télécharger mon dossier de permis » rassemble les documents préparés, leur version et la liste de ce qui manque ; elle ne doit jamais laisser croire à une autorisation obtenue. Le suivi aval relie étapes, responsabilités, preuves et paiements. Les actes engageants restent explicites. L’automatisation recherchée porte sur collecte, préremplissage, calculs, cohérence, relances autorisées et dossiers, avec validation humaine aux points à risque.
+
+### Modèle économique : hypothèses à tester
+
+Particuliers : forfait par projet ou étapes payantes, avec abonnement éventuel uniquement si le service récurrent le justifie.
+Professionnels : abonnement pour dossiers qualifiés, collaboration et outils de chiffrage ; services ou options complémentaires.
+Transactions : commissions transparentes possibles, sous réserve du cadre applicable, notamment pour le financement. Un pourcentage du prix de la maison peut contredire l’objectif d’économies ; l’incitation doit être examinée.
+Aucun tarif, volume de clients, chiffre d’affaires, taux de marge ou potentiel de valorisation n’est établi dans ce dossier.
+
+### Structure, coûts et avantage défendable
+
+Dimensionner l’équipe à partir des opérations réelles : produit/ergonomie, développement et données, expertise bâtiment, énergie/financement, support, partenariats et conformité. Mesurer acquisition, conversion, temps humain par dossier, coûts IA/3D, données, hébergement, assurance et support. Séparer marge brute, contribution et résultat d’exploitation. L’avantage potentiel est la continuité des données, les règles vérifiables et les retours professionnels ; il reste à prouver, comme la disposition à payer.
+
+Principe de confiance : démonstration publique sans dossiers personnels ; minimisation des données, accès par rôle et preuves de consentement avant transmission. L’IA ne remplace pas les responsabilités contractuelles des intervenants.
+
+## Ce que Claude doit challenger
+
+Objectif : obtenir un diagnostic contradictoire et un plan de réduction des risques, pas simplement une approbation de la vision.
+
+### Où en est réellement la refonte ?
+
+Socle développé : parcours, programme, moteur expérimental, projection 3D, calculs financiers, Passeport et composants professionnels.
+Preuves partielles : tests locaux ciblés, cas architecturaux bornés, mini-atelier de budget et équipements, démonstration publique navigable.
+Non démontré à ce stade : faisabilité universelle des plans, chaîne complète fiable sur dossiers réels, exactitude des aides à jour, marketplace active, conformité exhaustive, adoption payante et rentabilité. L’ampleur du code ne prouve pas la maturité du produit.
+
+### Priorités proposées, dans cet ordre
+
+1. Fermer un parcours pilote cohérent. Besoin → plan limité mais honnête → équipement → devis → financement/aides → Passeport → retour professionnel → reprise sauvegardée.
+2. Corriger les blocages d’usage. Hiérarchie, contraste, mobile, fenêtres et messages, suppression du bruit, énergie séparée et visuels crédibles clairement qualifiés.
+3. Stabiliser un périmètre architectural. Cas fixes reproductibles, cohérence 2D/3D/niveaux, refus explicites des cas non résolus ; atelier avec aperçu, annulation et deux modes budgétaires.
+4. Prouver prix, aides et échanges. Sources datées, devis réels, droits de partage, recalculs et export sans contradictions.
+5. Tester le modèle commercial. Pilotes utilisateurs et professionnels, coût de service, disposition à payer, puis choix d’équipe et tarification.
+
+### Lien d’exploration et limites de la démonstration
+
+Ouvrir Domus - démonstration publique
+https://pourelpaul-dotcom.github.io/domusai-v2-review/
+Point d’entrée vérifié le 19/09/2026 : accueil chargé et passage à « Où voulez-vous construire ? ». L’édition externe utilise des données de démonstration ; elle ne prouve pas les intégrations réelles et peut être antérieure aux développements locaux. Un navigateur interactif est nécessaire pour explorer l’application ; une IA limitée à la lecture de pages peut avoir besoin de captures. Les adresses localhost ne sont pas accessibles depuis l’extérieur.
+
+### Consigne prête à donner à Claude
+
+« Analyse Domus à partir de ce dossier et de la démonstration. Sépare ce que tu observes, ce que le dossier affirme et tes hypothèses. Identifie les contradictions, les risques bloquants et les fonctionnalités superflues. Évalue la proposition de valeur, l’ergonomie, le moteur, la traçabilité financière, les aides, la marketplace et le modèle économique. Propose un MVP vendable, un plan de 90 jours, des tests d’acceptation et les preuves nécessaires. Classe les actions par impact, risque et effort. Ne conclus pas à la conformité, à une aide acquise ou à une viabilité commerciale sans preuve. »
+
+Base documentaire interne : bilan de refonte du 16/09/2026 ; priorités du 19/09/2026 ; compte rendu HomeByMe de septembre ; notes de reprise et documentation de revue externe. Synthèse des exigences du porteur et de l’état consigné, non audit intégral du code ni expertise réglementaire. Compléments utiles : captures du dernier atelier, scénario test commun et devis anonymisé. Ne transmettre aucune donnée personnelle ou bancaire réelle à une IA sans choix explicite.
+
+
+Pour examiner le produitUn scénario de test commun
+Exemple fictif : foyer souhaitant trois chambres, un bureau et un garage, pour une enveloppe globale de 340 000 €. Ce scénario sert à comparer les réponses, pas à garantir qu’un tel programme est réalisable à ce prix.
+Décrire le projet et relever les hypothèses sur le terrain, les coûts inclus et les informations manquantes.Vérifier que le programme, le plan et la projection 3D sont cohérents ; relever les pièces inaccessibles, collisions et surfaces inexpliquées.Modifier un équipement : constater le prix avant/après, puis annuler. Comparer le mode budget ajustable au mode enveloppe contrainte.Lire séparément crédit, assurance et énergie ; vérifier que les aides estimées ne sont pas présentées comme accordées.Préparer le dossier destiné à un professionnel et identifier les pièces manquantes, les limites de validation et la version du projet.
+Ces étapes sont des critères d’évaluation : leur présence dans ce guide ne signifie pas qu’elles sont toutes disponibles ou fonctionnelles dans l’édition publique.
+Grille de réponse attenduePour chaque remarque : observation précise, preuve ou écran concerné, risque utilisateur, correction proposée et priorité. Classer séparément les défauts constatés, les limites annoncées et les hypothèses à tester. Sans navigateur interactif, limiter les conclusions à ce dossier et demander des captures pour l’ergonomie.
